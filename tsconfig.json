@@ -7,9 +7,10 @@
     "jsx": "react",
     "strictNullChecks": true,
     "paths": {
-      "deno": ["./deno.d.ts"],
+      "*": ["./deno.d.ts"],
       "https://*": ["./deno/deps/https/*"],
       "http://*": ["./deno/deps/http/*"]
     }
-  }
+  },
+  "exclude": ["./tools/doc/*"]
 }
